@@ -4,22 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
+    <link  href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <title>Colegio</title>
 </head>
 
 <body>
-    <img src="imagenes/imagenc.png" style="position:absolute;top:0px;right:40px;" width="200" height="200">
-    <h1>Bienvenidos</h1>  
-    <div>
-    <a href="ActividadPagina.html">Home</a>
-    <a href="Estudiante.html">Estudiante</a>
-    <a href="Administrador.html">Administrador</a>
-    <a href="Acercade.html">Acerca de</a>
-    </div>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <img src="imagenes/imagenc.png" alt="" width="80" height="58" class="d-inline-block align-text-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h1>Colegio "AMIGOS"</h1></a>         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav"  >
+            <ul class="navbar-nav">
+            
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="ActividadPagina.html" style="color: aliceblue;">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Estudiante.html" style="color: aliceblue;">Estudiantes</a>  
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Administrador.html" style="color: aliceblue;">Administradores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Acercade.html" style="color: aliceblue;">Acerca de</a>
+                </li>
+              
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-    <p class="mensaje">CONOCERÉIS LA VERDAD Y LA VERDAD OS HARÁ LIBRES</p>
-    <p class="cita">JUAN 8:32</p>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagenes/colegio3.jpg" class="d-block w-100" width="80" height="500"alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/colegio1.jpg" class="d-block w-100" width="80" height="500"alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/colegio2.jpg" class="d-block w-100" width="80" height="500" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="contenedor  row row-cols-2 row-cols-md-4 g-2 mt-4" >
+
+        <div class="col ">
+          <div class="card h-100  border-danger">
+            <img class="imagenes mx-auto d-inline-block"src="imagenes/mision.jpg" >
+            <div class="card-body">
+              <h5 class="card-title">MISIÓN</h5>
+            <p class="card-text">Educar y formar integralmente con la finalidad que los estudiantes alcancen su autorrealización 
+              humana y profesional a través de un proyecto educativo innovador que desarrolle competencias, pensamiento crítico y 
+              analítico, aptitudes, habilidades y destrezas.</p>
+            </div>
+          </div>
+        </div>
     
+        <div class="col">
+          <div class="card h-100  border-danger">
+            <img class="imagenes mx-auto d-inline-block"src="imagenes/vision.png">
+            <div class="card-body">
+              <h5 class="card-title">VISIÓN</h5>
+              <p class="card-text">Consolidar nuestra posición en Guatemala como una institución educativa de excelente calidad, 
+                cuyos egresados manifiesten dominio de los idiomas español e inglés, altos valores, éticos y espirituales y una  
+                sólida formación académica y tecnológica que les permitirá incorporarse con éxito al campo laboral y a los estudios superiores.</p>
+            </div>
+          </div>
+        </div>
+ 
+
+        <div class="col">
+          <div class="card h-100  border-danger">
+            <img class="imagenes mx-auto d-inline-block"src="imagenes/valores.jpg" >
+            <div class="card-body">
+              <h5 class="card-title">VALORES</h5>
+            <p class="card-text">Consolidar nuestra posición en Guatemala como una institución educativa de excelente calidad, 
+              cuyos egresados manifiesten dominio de los idiomas español e inglés, altos valores, éticos y espirituales y una  
+              sólida formación académica y tecnológica que les permitirá incorporarse con éxito al campo laboral y a los estudios superiores.</p>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+  
+
 </body>
 </html>

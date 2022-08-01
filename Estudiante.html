@@ -5,54 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+    <link  href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <title>Estudiante</title>
 </head>
 <body>
-    <img src="imagenes/imagenc.png" style="position:absolute;top:0px;right:40px;" width="200" height="200">
-    <h1>Lista de Estudiantes</h1> 
-    <div>
-      <a href="ActividadPagina.html">Home</a>
-      <a href="Estudiante.html">Estudiante</a>
-      <a href="Administrador.html">Administrador</a>
-      <a href="Acercade.html">Acerca de</a>
-      </div><br><br>
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <img src="imagenes/imagenc.png" alt="" width="80" height="58" class="d-inline-block align-text-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><h1>Colegio "AMIGOS"</h1></a>         
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="ActividadPagina.html" style="color: aliceblue;">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Estudiante.html" style="color: aliceblue;">Estudiantes</a>  
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Administrador.html" style="color: aliceblue;">Administradores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Acercade.html" style="color: aliceblue;">Acerca de</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <table>
-        <tr>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
           <th scope="col">Carnet</th>
           <th scope="col">Nombre</th>
           <th scope="col">Apellido</th>
           <th scope="col">Grado</th>
-        </tr>
-      
-        <tr>
-          <td>5678</td>
-          <td>Pedro</td>
-          <td>Gomez</td>
-          <td>Segundo</td>
-        </tr>
-      
-        <tr>
-          <td>2344</td>
-          <td>Luis</td>
-          <td>Ramirez</td>
-          <td>Tercero</td>
-        </tr>
-      
-        <tr>
-          <td>4453</td>
-          <td>Sonia</td>
-          <td>Orozco</td>
-          <td>Primero</td>
-        </tr>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr>
+        <th scope="row">1</th>
+        <td>5678</td>
+        <td>Pedro</td>
+        <td>Gomez</td>
+        <td>Segundo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>2344</td>
+        <td>Luis</td>
+        <td>Ramirez</td>
+        <td>Tercero</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>4453</td>
+        <td>Sonia</td>
+        <td>Orozco</td>
+        <td>Primero</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>1221</td>
+        <td>Gabriela</td>
+        <td>Ortiz</td>
+        <td>Segundo</td>
+      </tr>  
+    </tbody>
+  </table>
 
-        <tr>
-            <td>1221</td>
-            <td>Gabriela</td>
-            <td>Ortiz</td>
-            <td>Segundo</td>
-          </tr>      
-      </table>
-
+  
 </body>
 </html>
