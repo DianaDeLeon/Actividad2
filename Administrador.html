@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src ="js/funciones.js"></script>
     <link  href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <title>Administrador</title>
 </head>
@@ -35,49 +37,68 @@
     </div>
   </nav>
 
+  <div class="container" id="formAdmin"> 
+    <br>
+    <h2>Agregar Administrador</h2>
 
-  <table class="table table-bordered">
-    <thead>
+  <form id="formularioAdmin">
+    <br>
+    <input class="form-control mb-2"  placeholder="Codigo" type="text" name="codigo" id="codigo">
+    <br>
+    <input class="form-control mb-2" placeholder="Nombre" type="text" name="nombre" id="nombre">
+    <br>    
+    <input class="form-control mb-2" placeholder="Apellido"type="text" name="apellido" id="apellido">
+    <br>
+    <input class="form-control mb-2" placeholder="Curso"type="text" name="curso" id="curso">
+         
+    <br>
+    <br>
+    <button class="btn btn-dark me-md-2" type="button" onclick="getDataAdmin()" >Guardar</button>
+  </form>
+</div>
+
+<br>
+
+<div class="w3-col s4" id="formularioTablasAdmin"> 
+<table class="table table-bordered" id="myTableAdmin">
       <tr>
-        <th scope="col">#</th>
         <th scope="col">Código</th>
         <th scope="col">Nombre</th>
         <th scope="col">Apellido</th>
-        <th scope="col">Celular</th>
+        <th scope="col">Curso</th>
       </tr>
-    </thead>
-    <tbody class="table-group-divider">
+
       <tr>
-        <th scope="row">1</th>
         <td>0001</td>
         <td>Julio</td>
         <td>Perez</td>
-        <td>23435563</td>
+        <td>Matematica</td>
       </tr>
       <tr>
-        <th scope="row">2</th>
         <td>0002</td>
         <td>Carla</td>
         <td>Robles</td>
-        <td>84325656</td>
+        <td>Ingles</td>
       </tr>
       <tr>
-        <th scope="row">3</th>
         <td>0003</td>
         <td>Mario</td>
         <td>Maldonado</td>
-        <td>78564432</td>
+        <td>Sociales</td>
       </tr>
       <tr>
-        <th scope="row">4</th>
         <td>0004</td>
         <td>Hugo</td>
         <td>López</td>
-        <td>56778912</td>
+        <td>Lenguaje</td>
       </tr>  
-    </tbody>
   </table>
+</div>
 
+  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <button id="btnAgregarA"class="btn btn-dark me-md-2" type="button">Agregar</button>
+    <button id="btnListarA"class="btn btn-dark me-md-2" type="button">Listar</button>
+  </div> 
 
 </body>
 </html>
